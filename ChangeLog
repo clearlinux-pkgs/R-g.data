@@ -1,0 +1,19 @@
+New in version 2.4:
+- Vignette source moved to "vignettes" directory
+
+New in version 2.3:
+- Environment now attached as "myddp" instead of "package:myddp", making searchpaths() useless
+
+New in version 2.2:
+- Vignette
+
+New in version 2.1:
+- g.data.upgrade() removed
+- NAMESPACE added, making g.data.mash() and g.data.unmash() internal
+- Code split into individual files
+	
+New in version 2.0:
+- All data files stored in top-level directory, eliminate the "R" and "data" subdirectories.
+- Filenames include an "@" before uppercase letters, needed for Windows.
+- g.data.save() knows not to re-write promises.
+- Upgrade from v1, with a backwards-compatibility mode
