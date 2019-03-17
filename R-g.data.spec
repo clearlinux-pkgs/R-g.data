@@ -4,7 +4,7 @@
 #
 Name     : R-g.data
 Version  : 2.4
-Release  : 6
+Release  : 7
 URL      : https://cran.r-project.org/src/contrib/g.data_2.4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/g.data_2.4.tar.gz
 Summary  : Delayed-Data Packages
