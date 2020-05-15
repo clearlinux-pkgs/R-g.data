@@ -4,7 +4,7 @@
 #
 Name     : R-g.data
 Version  : 2.4
-Release  : 16
+Release  : 17
 URL      : https://cran.r-project.org/src/contrib/g.data_2.4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/g.data_2.4.tar.gz
 Summary  : Delayed-Data Packages
@@ -20,21 +20,22 @@ a ddp are available on demand, but do not take up memory until requested.
 
 %prep
 %setup -q -c -n g.data
+cd %{_builddir}/g.data
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1578177539
+export SOURCE_DATE_EPOCH=1589534002
 
 %install
-export SOURCE_DATE_EPOCH=1578177539
+export SOURCE_DATE_EPOCH=1589534002
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
